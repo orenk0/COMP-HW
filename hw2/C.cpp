@@ -1,10 +1,67 @@
-#include<stdio.h>
-#include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 
+vector<vector<int>> g;
+vector<vector<int>> G;
+vector<int> vis;
+
+//bfs like in class. but when it reaches finish it stops and return the distance.
+int bfs(int start, int finish) {
+    for(int x : G[start])
+       vis[x]=true;
+    vector<int> cur_level=G[start];
+    int dist=0;
+    while (!cur_level.empty()) {
+      vector<int> next_level;
+      for(int f : cur_level) {
+         for(int s : G[f]) {
+            if (vis[s]) continue;
+            vis[s]=true;
+            next_level.push_back(s);
+         }
+      }
+      dist++;
+      if(find(cur_level.begin(), cur_level.end(), finish) != cur_level.end()){
+         return dist;//if finish is in this level return dist.
+      }
+      cur_level = next_level;
+      
+    }
+    return -1;
+}
+
+
 void solve(){
-   cout << "Hello world!" << endl;
+      //get all the inputs:
+		int n, m;
+      cin >> n >> m;
+      vector<int> C(n);
+      for(int i = 0 ; i < n; i++){
+         cin >> C[i];
+      }
+      //build the graph g from the question:
+      g=vector<vector<int>>(n);
+      for(int j = 0 ; j < m ; j++){
+         int x, y;
+         cin >> x >> y;
+         g[x-1].push_back(y-1);//starting from 0 not 1
+         g[y-1].push_back(x-1);
+      }
+      //build the graph of pairs of pointers.
+      G=vector<vector<int>>(n*n);
+      for(int i = 0; i < n; i++){
+         for(int j = 0; j < n ; j++){
+            for(int a : g[i]){
+               for(int b : g[j]){
+                  if(C[a]!=C[b] && C[i]!=C[j]){//can move only if the colors are different
+                     G[n*i+j].push_back(n*a+b);
+                  }
+               }
+            }
+         }
+      }
+      vis=vector<int>(n*n);
+      cout << bfs(n-1,n*(n-1)) << endl;//bfs just for dist
 }
 
 int main(){
@@ -15,3 +72,5 @@ int main(){
    for(int i = 0; i < t; i++)
       solve();
 }
+//Algorithm:
+//complete this later
