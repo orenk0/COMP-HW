@@ -24,17 +24,17 @@ void solve(){
    int B;
    int N;
    cin >> B >> N;
-   //assert(!(B>=10000));
    counter = -1;//id for next dish.
    g = vector<vector<int>>(10000);//at most 1e4 dishes.
    gw = vector<vector<triplet>>(10000);//at most 1e4 dishes.
    for(int i = 0 ; i < N; i++){
+      //input:
       string strong, weak, junk;
       int cost, value;
       cin >> strong >> weak >> junk >> cost >> value;
       if(id.find(strong)==id.end()) id[strong]=++counter;//give number to each dish
       if(id.find(weak)==id.end()) id[weak]=++counter;
-      g[id[weak]].push_back(id[strong]);
+      g[id[weak]].push_back(id[strong]);//build the graphs
       gw[id[weak]].push_back({id[strong],cost,value});
    }
    if(B==0 || N==0) {cout << 0 << endl << 0 << endl; return;}
@@ -44,23 +44,9 @@ void solve(){
    for(int i = 0 ; i <= counter ; i++){//topo sort.
       if(!v[i]) dfs(i);
    }
-   /*
-   for(int i = 0 ; i <= counter ; i++){
-      for(auto t : gw[order[i]]){
-         cout << t[0] << ", ";
-      }
-      cout << order[i] << endl;
-   }
-   for(int i = 0 ; i <= counter ; i++){
-      for(auto t : gw[order[i]]){
-         cout << t[1] << ", ";
-      }
-      cout << order[i] << endl;
-   }
-   */
 
    using pairi = pair<int, int>;
-   unordered_map <int, pairi> pnp;//p&p map
+   unordered_map <int, pairi> pnp;//p&p map (price and prestige)
    //chronologically update price & prestige.
    for(int i = 0 ; i <= counter ; i++) pnp[i] = pairi(0,0);
    for(int i = 0 ; i <= counter ; i++){
@@ -78,10 +64,7 @@ void solve(){
          }
       }
    }
-   /*
-   for(int i = 0 ; i <= counter ; i++){
-      cout << i << ": " << pnp[i].first << ", " << pnp[i].second << endl;
-   }*/
+
    //now we have for each dish price and prestige.
    //do dynamic programming on budget and until index i.
    int dp[B+1][counter+1];
@@ -95,7 +78,7 @@ void solve(){
          if(price<=i) dp[i][j]=prestige;//enough money
          //else dp[i][j]=0 but its already 0...
       }
-      else if(i==0) dp[i][j] = 0;
+      else if(i==0) dp[i][j] = 0;//useless but why not leave it.
       else if(i-price<0) dp[i][j] = dp[i][j-1];
       else dp[i][j] = max(dp[i][j-1], prestige+dp[i-price][j-1]);
       //cout << i << ","<< j << ": "<< dp[i][j] << endl;
@@ -117,4 +100,19 @@ int main(){
       solve();
 }
 
-//Algorithm: still need to complete this.
+/*
+Algorithm:
+create the graph of the recipes g (omit the ingredient) each recipe is create from other recipe.
+Also create the same graph but save the added price and prestige for every edge.
+sort topologically the graph g (we get array "order" which is the same for gw the graph with the weights).
+then update chronologically (with the topo order) the price & prestige of each dish.
+if you find a better price/prestige for some dish update it.
+the base dishes will remain with price & prestige 0.
+now that we have the correct price and prestige for each dish we use dynamic programming.
+this is the famous algorithm for knapsack (01). We use recursion on the budget and the max index until which we can select dishes.
+the relation is described in the code as well as the base cases.
+Complexity: 
+O(N) for the topo sort.
+O(B*n)=O(1e4*1e4) for the dynamic programming. where n = amount of dishes. (it takes O(1) for each cell and there are B*n cells).
+overall O(N+B*n)
+*/

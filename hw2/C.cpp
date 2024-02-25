@@ -47,7 +47,7 @@ void solve(){
          g[x-1].push_back(y-1);//starting from 0 not 1
          g[y-1].push_back(x-1);
       }
-      //build the graph of pairs of pointers.
+      //build the graph of pairs of pointers G.
       G=vector<vector<int>>(n*n);
       for(int i = 0; i < n; i++){
          for(int j = 0; j < n ; j++){
@@ -60,7 +60,7 @@ void solve(){
             }
          }
       }
-      vis=vector<int>(n*n);
+      vis=vector<int>(n*n);//for the bfs on the n^2 vertecies of G
       cout << bfs(n-1,n*(n-1)) << endl;//bfs just for dist
 }
 
@@ -72,5 +72,13 @@ int main(){
    for(int i = 0; i < t; i++)
       solve();
 }
-//Algorithm:
-//complete this later
+/*Algorithm:
+build the graph g from the question.
+then buld a new graph G in which every vertex represents a pair of vertecies in g.
+put edges between vertecies iff one can move from one position to another legally (colors remain different).
+represent each pair of vertices in g as n*i+j (this is a bijection).
+finally using BFS find the distance between the the pair representing (0,n) and (n,0).
+Complexity:
+O(n^2+m^2)=O(n^2) since in G there are at most m^2 edges and n^2 vertices. the building of it takes O(n^2) also because
+we iterate over all pairs of vertices and check stuff in O(1) time.
+*/

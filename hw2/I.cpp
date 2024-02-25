@@ -79,3 +79,5 @@ int main(){
 // then we calculate each entry in O(1).
 // so every row takes O(n) time.
 //there are overall O(n) rows hence O(n^2) total time.
+//Space:
+//O(n^2) for the dp of size (n+1)(n+2) and the negligable vector a of size n+1.
