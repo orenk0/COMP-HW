@@ -9,7 +9,6 @@ const ll INF_N = -1e18;
 // Time Complexity: O(N), where N is the number of elements in the array.
 // Each element is accessed once to calculate the differences.
 vector<ll> getMaxDiffsArr(vector<ll>& a, int n) {
-vector<ll> getMaxDiffsArr(vector<ll>& a, int n) {
     vector<ll> max_diffs(n); // Stores the maximum difference for each element.
     for (int i = 0; i < n; i++) {
         ll prev_diff = (i == 0) ? INF_N : abs(a[i] - a[i - 1]);

@@ -1,0 +1,249 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "COMP-HW",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "group_comp2_qC.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-group_comp2_qC.o-Debug-d04c188cd000ace94756.json",
+					"name" : "group_comp2_qC.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "group_comp3_qA.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-group_comp3_qA.o-Debug-ca3aea0c61d117aa4a8c.json",
+					"name" : "group_comp3_qA.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "group_comp3_qB.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-group_comp3_qB.o-Debug-b6aceb46e0ed001f45ab.json",
+					"name" : "group_comp3_qB.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "group_comp3_qC.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-group_comp3_qC.o-Debug-140bff1fe236663501a5.json",
+					"name" : "group_comp3_qC.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "group_comp3_qD.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-group_comp3_qD.o-Debug-e179935f7ba2dbcdde2e.json",
+					"name" : "group_comp3_qD.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qA.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qA.o-Debug-145a3b5be3ec885c16b5.json",
+					"name" : "hw1_mirit_qA.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qB.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qB.o-Debug-11d751e8d747bdc2b5ed.json",
+					"name" : "hw1_mirit_qB.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qC.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qC.o-Debug-19859885f215c18864a6.json",
+					"name" : "hw1_mirit_qC.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qD.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qD.o-Debug-dd4f54f1a2f9a03be110.json",
+					"name" : "hw1_mirit_qD.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qE.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qE.o-Debug-a65f85ceba6ea73beecf.json",
+					"name" : "hw1_mirit_qE.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qF.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qF.o-Debug-8b50e2141034a9de7da9.json",
+					"name" : "hw1_mirit_qF.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw1_mirit_qG.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw1_mirit_qG.o-Debug-67536a5d4ec18ddcb922.json",
+					"name" : "hw1_mirit_qG.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_A.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_A.o-Debug-dd258ddccc911aa56ca0.json",
+					"name" : "hw2_A.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_B.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_B.o-Debug-abe72e49e603978896c5.json",
+					"name" : "hw2_B.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_C.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_C.o-Debug-ae3bec74ed1328fbbb30.json",
+					"name" : "hw2_C.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_D.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_D.o-Debug-e2701fb5a7b07c44a595.json",
+					"name" : "hw2_D.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_E.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_E.o-Debug-85ff62f37b68ad12f41e.json",
+					"name" : "hw2_E.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_F.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_F.o-Debug-fa95fddac987ef63a0b0.json",
+					"name" : "hw2_F.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_G.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_G.o-Debug-dfecbeb1897d6ebe7b9d.json",
+					"name" : "hw2_G.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_H.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_H.o-Debug-d03c442cc07f979419e2.json",
+					"name" : "hw2_H.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hw2_I.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hw2_I.o-Debug-8cab07c19314483a4141.json",
+					"name" : "hw2_I.o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "template.o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-template.o-Debug-e6ed326d9528349dc373.json",
+					"name" : "template.o",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/Mirit/Documents/University/Curr/Competitive Programming/GitHub/COMP-HW/cmake-build-debug",
+		"source" : "/Users/Mirit/Documents/University/Curr/Competitive Programming/GitHub/COMP-HW"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
