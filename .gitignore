@@ -1,7 +1,8 @@
-# CLion-specific files
+# CLion generated directories
 .idea/
-cmake-build-debug/
-cmake-build-release/
+
+# OS generated files
+.DS_Store
 
 # User-specific files
 *.iml
@@ -12,6 +13,7 @@ cmake-build-release/
 *.slo
 *.lo
 *.o
+*.out
 *.obj
 
 # Precompiled Headers
@@ -29,7 +31,3 @@ cmake-build-release/
 
 # Compiled S
 *.s
-
-# Ignore local config files
-hw1/mirit/cmake-build-debug/
-hw1/mirit/CMakeLists.txt
