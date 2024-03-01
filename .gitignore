@@ -1,0 +1,35 @@
+# CLion-specific files
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# User-specific files
+*.iml
+*.iws
+*.ipr
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled S
+*.s
+
+# Ignore local config files
+hw1/mirit/cmake-build-debug/
+hw1/mirit/CMakeLists.txt
