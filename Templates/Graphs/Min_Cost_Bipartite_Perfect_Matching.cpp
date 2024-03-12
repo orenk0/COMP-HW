@@ -1,3 +1,10 @@
+/* Konig's Theorem
+In a bipartite graph, the number of edges in maximum matching is equal to the number of vertices in a minimum vertex cover.
+Vertex Cover: subset of vertices S such that each edge has at least one endpoint in S.
+Minimum vertex cover: minimise the vertex cover.
+*/
+
+
 //////////////////////////////////////////////////////////////////////
 // Min cost bipartite matching via shortest augmenting paths
 //
