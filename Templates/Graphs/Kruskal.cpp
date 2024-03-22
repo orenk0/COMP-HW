@@ -23,10 +23,10 @@ ll kruskal(vector<array<int, 3>> &edges, ll n) {
   sort(edges.begin(), edges.end());
   dsu uf(n);
   ll mst_weight = 0;
-  for (auto [w, x, y]: edges) {
-    if (uf.find_(x) == uf.find_(y)) continue;
-      mst_weight += w;   
-      uf.union_(x, y);   
+  for (auto [w, x, y]: edges)
+    if (uf.find_(x) == uf.find_(y)) continue;
+      mst_weight += w;
+      uf.union_(x, y);
   }
   return mst_weight;
 }

@@ -3,6 +3,18 @@ project(COMP-HW)
 
 set(CMAKE_CXX_STANDARD 17)
 
+
+add_executable(final_comp_qA.o final_comp/qA.cpp)
+add_executable(final_comp_qB.o final_comp/qB.cpp)
+add_executable(final_comp_qC.o final_comp/qC.cpp)
+add_executable(final_comp_qD.o final_comp/qD.cpp)
+add_executable(final_comp_qE.o final_comp/qE.cpp)
+add_executable(final_comp_qF.o final_comp/qF.cpp)
+add_executable(final_comp_qG.o final_comp/qG.cpp)
+add_executable(final_comp_qH.o final_comp/qH.cpp)
+add_executable(final_comp_qI.o final_comp/not_completed/qI.cpp)
+add_executable(final_comp_qJ.o final_comp/qJ.cpp)
+
 add_executable(group_comp3_qA.o group_comp3/qA.cpp)
 add_executable(group_comp3_qB.o group_comp3/qB.cpp)
 add_executable(group_comp3_qC.o group_comp3/not_completed/qC.cpp)
