@@ -3,6 +3,7 @@ project(COMP-HW)
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_executable(hw3_B.o hw3/B.cpp)
 
 add_executable(final_comp_qA.o final_comp/qA.cpp)
 add_executable(final_comp_qB.o final_comp/qB.cpp)
